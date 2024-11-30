@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优优的工作室</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        /* 头部样式 */
+        header {
+            background: linear-gradient(90deg, #4CAF50, #3BA0E9);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeInDown 1s;
+        }
+        /* 导航样式 */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* 主内容样式 */
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.2s;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4CAF50;
+            font-size: 1.8rem;
+        }
+        section p, section ul {
+            margin: 0 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        /* 联系方式 */
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #3BA0E9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #4CAF50;
+        }
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+        /* 动画 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>优优的工作室</h1>
+    </header>
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#services">服务</a>
+        <a href="#contact">联系我们</a>
+    </nav>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>你好，我是优优，欢迎来到我的个人工作室主页。我热爱技术和创造，希望通过这个平台分享我的作品和服务。</p>
+    </section>
+    <section id="services">
+        <h2>服务</h2>
+        <ul>
+            <li>网页设计与开发</li>
+            <li>系统软件定制</li>
+            <li>技术咨询</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>联系我们</h2>
+        <p>如果您有任何问题或合作意向，请随时通过以下方式联系我：</p>
+        <div class="contact">
+            <p>邮箱：<a href="mailto:youyou2024520@gmail.com">youyou2024520@gmail.com</a></p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 优优的工作室. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
